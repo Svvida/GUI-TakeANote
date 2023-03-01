@@ -28,69 +28,61 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(formCreateNewNote));
             this.lblNewNoteTitle = new System.Windows.Forms.Label();
             this.lblNewNoteDescription = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtboxNewNoteTitle = new System.Windows.Forms.TextBox();
+            this.txtboxNewNoteDesc = new System.Windows.Forms.TextBox();
             this.btnNewNoteSave = new System.Windows.Forms.Button();
+            this.btnNewNoteCancel = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lblNewNoteTitle
             // 
-            this.lblNewNoteTitle.AutoSize = true;
-            this.lblNewNoteTitle.Location = new System.Drawing.Point(20, 32);
+            resources.ApplyResources(this.lblNewNoteTitle, "lblNewNoteTitle");
             this.lblNewNoteTitle.Name = "lblNewNoteTitle";
-            this.lblNewNoteTitle.Size = new System.Drawing.Size(30, 13);
-            this.lblNewNoteTitle.TabIndex = 0;
-            this.lblNewNoteTitle.Text = "Title:";
             // 
             // lblNewNoteDescription
             // 
-            this.lblNewNoteDescription.AutoSize = true;
-            this.lblNewNoteDescription.Location = new System.Drawing.Point(20, 63);
+            resources.ApplyResources(this.lblNewNoteDescription, "lblNewNoteDescription");
             this.lblNewNoteDescription.Name = "lblNewNoteDescription";
-            this.lblNewNoteDescription.Size = new System.Drawing.Size(63, 13);
-            this.lblNewNoteDescription.TabIndex = 1;
-            this.lblNewNoteDescription.Text = "Description:";
             // 
-            // textBox1
+            // txtboxNewNoteTitle
             // 
-            this.textBox1.Location = new System.Drawing.Point(91, 29);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(88, 20);
-            this.textBox1.TabIndex = 2;
+            resources.ApplyResources(this.txtboxNewNoteTitle, "txtboxNewNoteTitle");
+            this.txtboxNewNoteTitle.Name = "txtboxNewNoteTitle";
             // 
-            // textBox2
+            // txtboxNewNoteDesc
             // 
-            this.textBox2.Location = new System.Drawing.Point(91, 63);
-            this.textBox2.Multiline = true;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.textBox2.Size = new System.Drawing.Size(251, 233);
-            this.textBox2.TabIndex = 3;
+            resources.ApplyResources(this.txtboxNewNoteDesc, "txtboxNewNoteDesc");
+            this.txtboxNewNoteDesc.Name = "txtboxNewNoteDesc";
             // 
             // btnNewNoteSave
             // 
-            this.btnNewNoteSave.Location = new System.Drawing.Point(13, 272);
+            resources.ApplyResources(this.btnNewNoteSave, "btnNewNoteSave");
             this.btnNewNoteSave.Name = "btnNewNoteSave";
-            this.btnNewNoteSave.Size = new System.Drawing.Size(75, 23);
-            this.btnNewNoteSave.TabIndex = 4;
-            this.btnNewNoteSave.Text = "Save";
             this.btnNewNoteSave.UseVisualStyleBackColor = true;
             this.btnNewNoteSave.Click += new System.EventHandler(this.btnNewNoteSave_Click);
             // 
+            // btnNewNoteCancel
+            // 
+            resources.ApplyResources(this.btnNewNoteCancel, "btnNewNoteCancel");
+            this.btnNewNoteCancel.Name = "btnNewNoteCancel";
+            this.btnNewNoteCancel.UseVisualStyleBackColor = true;
+            this.btnNewNoteCancel.Click += new System.EventHandler(this.btnNewNoteCancel_Click);
+            // 
             // formCreateNewNote
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(354, 308);
+            this.BackColor = System.Drawing.Color.AntiqueWhite;
+            this.Controls.Add(this.btnNewNoteCancel);
             this.Controls.Add(this.btnNewNoteSave);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtboxNewNoteDesc);
+            this.Controls.Add(this.txtboxNewNoteTitle);
             this.Controls.Add(this.lblNewNoteDescription);
             this.Controls.Add(this.lblNewNoteTitle);
             this.Name = "formCreateNewNote";
-            this.Text = "formCreateNewNote";
             this.Load += new System.EventHandler(this.formCreateNewNote_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -101,8 +93,9 @@
 
         private System.Windows.Forms.Label lblNewNoteTitle;
         private System.Windows.Forms.Label lblNewNoteDescription;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txtboxNewNoteTitle;
+        private System.Windows.Forms.TextBox txtboxNewNoteDesc;
         private System.Windows.Forms.Button btnNewNoteSave;
+        private System.Windows.Forms.Button btnNewNoteCancel;
     }
 }

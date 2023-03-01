@@ -16,7 +16,7 @@ namespace GUI_TakeANote
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new btnNewNote());
+            Application.Run(new TakeANoteForm());
         }
     }
 }
