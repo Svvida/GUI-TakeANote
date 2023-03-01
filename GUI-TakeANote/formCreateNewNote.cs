@@ -31,11 +31,11 @@ namespace GUI_TakeANote
                 MessageBox.Show("Your note was saved succesfully!!!");
                 this.Close();
             }
-            else
-            {
-                MessageBox.Show("Okey :(");
-                this.Close();
-            }
+        }
+
+        private void btnNewNoteCancel_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

@@ -117,4 +117,171 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="lblNewNoteTitle.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 9pt, style=Bold</value>
+  </data>
+  <data name="lblNewNoteTitle.Location" type="System.Drawing.Point, System.Drawing">
+    <value>2, 32</value>
+  </data>
+  <data name="lblNewNoteTitle.Size" type="System.Drawing.Size, System.Drawing">
+    <value>86, 13</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="lblNewNoteTitle.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="lblNewNoteTitle.Text" xml:space="preserve">
+    <value>Title:</value>
+  </data>
+  <data name="&gt;&gt;lblNewNoteTitle.Name" xml:space="preserve">
+    <value>lblNewNoteTitle</value>
+  </data>
+  <data name="&gt;&gt;lblNewNoteTitle.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblNewNoteTitle.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;lblNewNoteTitle.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="lblNewNoteDescription.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 9pt, style=Bold</value>
+  </data>
+  <data name="lblNewNoteDescription.Location" type="System.Drawing.Point, System.Drawing">
+    <value>5, 63</value>
+  </data>
+  <data name="lblNewNoteDescription.Size" type="System.Drawing.Size, System.Drawing">
+    <value>93, 13</value>
+  </data>
+  <data name="lblNewNoteDescription.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="lblNewNoteDescription.Text" xml:space="preserve">
+    <value>Description:</value>
+  </data>
+  <data name="&gt;&gt;lblNewNoteDescription.Name" xml:space="preserve">
+    <value>lblNewNoteDescription</value>
+  </data>
+  <data name="&gt;&gt;lblNewNoteDescription.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblNewNoteDescription.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;lblNewNoteDescription.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="txtboxNewNoteTitle.Location" type="System.Drawing.Point, System.Drawing">
+    <value>91, 29</value>
+  </data>
+  <data name="txtboxNewNoteTitle.Size" type="System.Drawing.Size, System.Drawing">
+    <value>251, 20</value>
+  </data>
+  <data name="txtboxNewNoteTitle.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;txtboxNewNoteTitle.Name" xml:space="preserve">
+    <value>txtboxNewNoteTitle</value>
+  </data>
+  <data name="&gt;&gt;txtboxNewNoteTitle.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;txtboxNewNoteTitle.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;txtboxNewNoteTitle.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="txtboxNewNoteDesc.Location" type="System.Drawing.Point, System.Drawing">
+    <value>91, 63</value>
+  </data>
+  <data name="txtboxNewNoteDesc.Multiline" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="txtboxNewNoteDesc.Size" type="System.Drawing.Size, System.Drawing">
+    <value>251, 232</value>
+  </data>
+  <data name="txtboxNewNoteDesc.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;txtboxNewNoteDesc.Name" xml:space="preserve">
+    <value>txtboxNewNoteDesc</value>
+  </data>
+  <data name="&gt;&gt;txtboxNewNoteDesc.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;txtboxNewNoteDesc.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;txtboxNewNoteDesc.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="btnNewNoteSave.Location" type="System.Drawing.Point, System.Drawing">
+    <value>13, 272</value>
+  </data>
+  <data name="btnNewNoteSave.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 23</value>
+  </data>
+  <data name="btnNewNoteSave.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="btnNewNoteSave.Text" xml:space="preserve">
+    <value>Save</value>
+  </data>
+  <data name="&gt;&gt;btnNewNoteSave.Name" xml:space="preserve">
+    <value>btnNewNoteSave</value>
+  </data>
+  <data name="&gt;&gt;btnNewNoteSave.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnNewNoteSave.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;btnNewNoteSave.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="btnNewNoteCancel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>13, 243</value>
+  </data>
+  <data name="btnNewNoteCancel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 23</value>
+  </data>
+  <data name="btnNewNoteCancel.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="btnNewNoteCancel.Text" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="&gt;&gt;btnNewNoteCancel.Name" xml:space="preserve">
+    <value>btnNewNoteCancel</value>
+  </data>
+  <data name="&gt;&gt;btnNewNoteCancel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnNewNoteCancel.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;btnNewNoteCancel.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>6, 13</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>354, 308</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>formCreateNewNote</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>formCreateNewNote</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
 </root>

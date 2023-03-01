@@ -10,29 +10,60 @@ using System.Windows.Forms;
 
 namespace GUI_TakeANote
 {
-    public partial class btnNewNote : Form
+    public partial class TakeANoteForm : Form
     {
-        public btnNewNote()
+        DataTable notes = new DataTable();
+        bool editing = true;
+        public TakeANoteForm()
         {
             InitializeComponent();
         }
 
-        private void btnNewNote_Click(object sender, EventArgs e)
+        private void TakeANoteForm_Load(object sender, EventArgs e)
         {
-            DialogResult btnNewNoteResult = MessageBox.Show("Do you want to create a new note?", "Confirm", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
-            if (btnNewNoteResult == DialogResult.Yes)
+            notes.Columns.Add("Title");
+            notes.Columns.Add("Description");
+
+            viewNotes.DataSource = notes;
+
+            DataRow inputNote = notes.NewRow();
+        }
+        private void viewNotes_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void btnDelNote_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnCloseTakeANote_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void btnAddNewNote_Click(object sender, EventArgs e)
+        {
+            //DialogResult btnNewNoteResult = MessageBox.Show("Do you want to create a new note?", "Confirm", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            //if (btnNewNoteResult == DialogResult.Yes)
+            //{
+            //    formCreateNewNote Form2 = new formCreateNewNote();
+            //    Form2.ShowDialog();
+            //}
+            if (txtboxTitle.Text == "")
             {
-                formCreateNewNote Form2 = new formCreateNewNote();
-                Form2.ShowDialog();
-            } 
+                MessageBox.Show("Title or Description shouldn't be empty!");
+            }
+            else
+            {
+                notes.Rows.Add(txtboxTitle.Text, txtBoxDescription.Text);
+            }
+                
+
         }
 
-        private void btnNewNote_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void toolBar1_ButtonClick(object sender, ToolBarButtonClickEventArgs e)
+        private void btnLoadNote_Click(object sender, EventArgs e)
         {
 
         }
