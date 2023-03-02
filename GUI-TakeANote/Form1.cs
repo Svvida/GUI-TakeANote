@@ -13,7 +13,7 @@ namespace GUI_TakeANote
     public partial class TakeANoteForm : Form
     {
         DataTable notes = new DataTable();
-        bool editing = true;
+        DataSet notesData = new DataSet();
         public TakeANoteForm()
         {
             InitializeComponent();
@@ -23,10 +23,15 @@ namespace GUI_TakeANote
         {
             notes.Columns.Add("Title");
             notes.Columns.Add("Description");
-
+            //Adding source to view
             viewNotes.DataSource = notes;
 
-            DataRow inputNote = notes.NewRow();
+            //Adding datatable to dataset
+            notesData.Tables.Add(notes);
+
+            //Reading saved notes
+            notesData.ReadXml(@"D:\GitHub\TakeANote\GUI-TakeANote\myDataSet.xml", XmlReadMode.ReadSchema);
+
         }
         private void viewNotes_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
@@ -35,6 +40,7 @@ namespace GUI_TakeANote
 
         private void btnDelNote_Click(object sender, EventArgs e)
         {
+            //Deleting notes only when something else than new row is selected
             if(viewNotes.SelectedRows.Count>0 && !viewNotes.SelectedRows[0].IsNewRow)
             {
                 viewNotes.Rows.Remove(viewNotes.SelectedRows[0]);
@@ -55,6 +61,9 @@ namespace GUI_TakeANote
             else
             {
                 notes.Rows.Add(txtboxTitle.Text, txtBoxDescription.Text);
+
+                //Saving notes to xml file
+                notesData.WriteXml(@"D:\GitHub\TakeANote\GUI-TakeANote\myDataSet.xml", XmlWriteMode.WriteSchema);               
             }              
         }
 
@@ -62,6 +71,7 @@ namespace GUI_TakeANote
         {
           if(viewNotes.SelectedRows.Count>0)
             {
+                //Loading selected notes from dataGridView
                 txtboxTitle.Text = notes.Rows[viewNotes.CurrentCell.RowIndex].ItemArray[0].ToString();
                 txtBoxDescription.Text = notes.Rows[viewNotes.CurrentCell.RowIndex].ItemArray[1].ToString();
             }
