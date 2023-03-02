@@ -62,12 +62,15 @@
             // 
             // viewNotes
             // 
+            this.viewNotes.AllowUserToOrderColumns = true;
+            this.viewNotes.AllowUserToResizeColumns = false;
             this.viewNotes.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.viewNotes.BackgroundColor = System.Drawing.SystemColors.Window;
             this.viewNotes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.viewNotes.Location = new System.Drawing.Point(368, 143);
             this.viewNotes.Name = "viewNotes";
             this.viewNotes.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.viewNotes.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.viewNotes.Size = new System.Drawing.Size(350, 406);
             this.viewNotes.TabIndex = 2;
             this.viewNotes.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.viewNotes_CellContentClick);
