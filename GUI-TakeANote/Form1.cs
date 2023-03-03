@@ -44,6 +44,7 @@ namespace GUI_TakeANote
             if(viewNotes.SelectedRows.Count>0 && !viewNotes.SelectedRows[0].IsNewRow)
             {
                 viewNotes.Rows.Remove(viewNotes.SelectedRows[0]);
+                notesData.WriteXml(@"D:\GitHub\TakeANote\GUI-TakeANote\myDataSet.xml", XmlWriteMode.WriteSchema);
             }          
         }
 
@@ -75,6 +76,11 @@ namespace GUI_TakeANote
                 txtboxTitle.Text = notes.Rows[viewNotes.CurrentCell.RowIndex].ItemArray[0].ToString();
                 txtBoxDescription.Text = notes.Rows[viewNotes.CurrentCell.RowIndex].ItemArray[1].ToString();
             }
+        }
+
+        private void txtBoxDescription_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

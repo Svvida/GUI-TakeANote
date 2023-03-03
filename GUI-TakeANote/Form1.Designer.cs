@@ -135,6 +135,7 @@
             this.txtBoxDescription.Name = "txtBoxDescription";
             this.txtBoxDescription.Size = new System.Drawing.Size(340, 338);
             this.txtBoxDescription.TabIndex = 9;
+            this.txtBoxDescription.TextChanged += new System.EventHandler(this.txtBoxDescription_TextChanged);
             // 
             // TakeANoteForm
             // 
